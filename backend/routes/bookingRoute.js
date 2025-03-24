@@ -56,7 +56,7 @@ bookingRoutes.post("/create",authentication,authorisation(["patient"]) , async (
             from: 'parmarshobhit91@gmail.com',
             to: `${data.userEmail}`,
             subject: 'Booking Confirmation from Rapid fit',
-            text: `Your Booking is confirmed on ${data.bookingDate} date.`
+            text: `Your Booking is confirmed on ${data.bookingDate} date and time ${data.bookingSlot}.`
         };
         transporter.sendMail(mailOptions, (error, info) => {
             if (error) {
