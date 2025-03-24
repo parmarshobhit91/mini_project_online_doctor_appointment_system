@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    background-color: lightblue;
+}
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 100px;
+    height: 80px;
+    font-size: 30px;
+}
+.navBar ul {
+    display: flex;
+}
+
+.navBar ul li a {
+    display: block;
+    padding: 10px 30px;
+    color: lightcoral;
+}
+
+.navBar ul li a:hover {
+    background-color: white;
+    color: lightblue;
+    border-radius: 50px;
+}
+h1,h3{
+    text-align: center;
+    color: lightcoral;
+    margin-bottom: 20px;
+}
+table{
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+  }
+  td, th {
+      border: 1px solid lightcoral;
+      text-align: center;
+      padding: 8px;
+      height: 30px;
+    }
+  tr:nth-child(even) {
+     background-color: #333;
+  }  
+ 
+
+  .cancelAppointment,.videoCall{
+    border-radius: 10px;
+    background-color: lightcoral;
+    padding: 10px 20px;
+    color: lightblue;
+    font-size: 15px;
+    border: 1px solid lightcoral;
+  }
+  .cancelAppointment:hover,.videoCall:hover{
+    background-color: lightblue;
+    color: lightcoral;
+    border: 1px solid lightcoral;
+    cursor: pointer;
+  }
