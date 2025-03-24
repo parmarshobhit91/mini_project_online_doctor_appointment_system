@@ -76,7 +76,7 @@ function displayAllAppointments(arr,name,role){
         videoCallBtn.addEventListener("click",(e)=>{
                 let id=e.target.dataset.id
                 //console.log(id);
-                window.open(`http://localhost:5000/${id}`,"_blank")
+                window.open(`http://localhost:8000/${id}`,"_blank")
            })
       }
 
