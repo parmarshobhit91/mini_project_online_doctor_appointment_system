@@ -9,7 +9,9 @@ const { bookingRoutes } = require("./routes/bookingRoute");
 
 const app=express();
 
-app.use(cors());
+app.use(cors(
+  origin = "*"
+));
 app.use(express.json());
 
 const httpServer = http.createServer(app);
