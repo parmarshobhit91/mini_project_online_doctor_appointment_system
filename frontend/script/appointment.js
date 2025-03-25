@@ -1,4 +1,5 @@
-let baseUrl=`http://localhost:8000`;
+// let baseUrl=`http://localhost:8000`;
+let baseUrl=`https://mini-project-online-doctor-appointment.onrender.com`;
 
 let token=sessionStorage.getItem("token");
 
@@ -76,7 +77,8 @@ function displayAllAppointments(arr,name,role){
         videoCallBtn.addEventListener("click",(e)=>{
                 let id=e.target.dataset.id
                 //console.log(id);
-                window.open(`http://localhost:8000/${id}`,"_blank")
+                // window.open(`http://localhost:8000/${id}`,"_blank")
+                window.open(`https://mini-project-online-doctor-appointment.onrender.com/${id}`,"_blank")
            })
       }
 

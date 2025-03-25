@@ -1,4 +1,5 @@
-let baseUrl=`http://localhost:8000`;
+// let baseUrl=`http://localhost:8000`;
+let baseUrl=`https://mini-project-online-doctor-appointment.onrender.com`;
 
 let doctorBtn=document.getElementById("doctor");
 let patientBtn=document.getElementById("patient");
