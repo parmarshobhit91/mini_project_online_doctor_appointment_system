@@ -1,43 +1,201 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 *{
     margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-    background-color: lightblue;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
 }
-header {
+
+.container{
+
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+  
+}
+.container img{
+
+    width: 100%;
+    position:absolute;
+    height: 110vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.main-title{
+
+    position: absolute;
+    top: 30%;
+    left: 65%;
+    font-size: 8rem;  
+    transform: translate(-55%,-30%);
+    /* font-style: italic; */
+    font-family: cursive;
+}
+    
+
+nav ul{
+    position:absolute;
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0px 100px;
-    height: 80px;
-    font-size: 30px;
-}
-.navBar ul {
-    display: flex;
+    padding: 1rem 10rem ;
+    justify-content: space-between;
+    font-family: cursive;
+    list-style: none;
 }
 
-.navBar ul li a {
-    display: block;
-    padding: 10px 30px;
-    color: lightcoral;
+nav ul li a{
+
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s border-radius 0.3s;
+}
+nav ul li a:hover{
+
+    background-color: white; /* White background on hover */
+    color: #000; /* Changes text color to black for contrast */
+    border-radius: 10px; /* Rounded borders on hover */
 }
 
-.navBar ul li a:hover {
-    background-color: white;
-    color: lightblue;
-    border-radius: 50px;
+.content{
+   
+    position:absolute;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 2;
+    /* background: black; */
+
+    color: #fff;
+    background-color: rgb(45, 45, 45);
+    padding: 3rem 0rem;
+    
 }
-h1{
-    text-align: center;
-    color: lightcoral;
+
+
+
+.content .para-div{
+    padding: 2rem 8rem;
+    margin: 0 0;
+}
+
+.content .para-div h2{
+    font-size: 50px;
+    padding: 0 0rem;
+    font-style: italic;
+}
+
+.content .para-div p{
+    font-size: 1.5rem;
     margin-bottom: 20px;
+    font-family: cursive;
 }
-#image{
-    width:100%;
-    margin: auto;
-    text-align: center;
-    height: 400px;
+/* .content .para-div p:first-child {
+
+    margin-bottom: 20px;
+} */
+ .kar{
+    padding-bottom: 10px;
+ }
+
+.content .bg-div{
+    width: 100%;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+
+.content #bg-div1{
+    background-image: url(../Images/boy.jpg);
+    background-size: cover; /* Scales image to cover the div */
+    background-position: center; /* Centers the image */
+   
+}
+.content #bg-div2{
+    background-image: url(../Images/dac.jpg);
+}
+.content #bg-div3{
+    background-image: url(../Images/t2.jpg);
+}
+
+.content .bg-div .title-div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    background-color: #fff;
+    padding: 0.5rem 2.5rem;
+}
+
+.content .bg-div .title-div p{
+    font-size: 3.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#bg-div1 {
+    background-image: url(../Images/boy.jpg);
+    background-size: cover; /* Ensures the image covers the div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    height: 400px; /* Set a height for the div (adjust as needed) */
+    position: relative; /* Allows positioning of child elements */
+   /* Center vertically */
+     /* Center horizontally */
+    
+}
+
+/* .bgdiv12{
+    transform: translate(-5%,-30%);
+} */
+
+/* Style the text */
+.bgdiv12 p {
+    width: 800px;
+    color: white; /* White text for visibility on image */
+    font-size: 35px; /* Adjust size as needed */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for readability */
+    margin: 0; /* Remove default margin */
+    position: absolute;
+    background-attachment: fixed;
+    top: 20%;
+    left: 3%;
+    font-family: cursive;
+    /* transform: translate(-80%,10%); */
+  
+}
+
+/* Style the button */
+.bgdiv12 button {
+    padding: 10px 20px; /* Button padding */
+    font-size: 16px; /* Text size */
+    color: white; /* Text color */
+    background-color: #007BFF; /* Button color (blue) */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Hand cursor on hover */
+    transition: background-color 0.3s; /* Smooth hover effect */
+    margin-left: 15%; 
+    margin-top: 12%;
+   font: intalic;
+
+    
+}
+
+/* Hover effect for the button */
+#bg-div1 button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.backgroundVideo {
+    width: 100%;
+min-height: 300px;
+background-size: cover;
+background-attachment: fixed;
+background-position: center;
+position: relative;
+    
 }

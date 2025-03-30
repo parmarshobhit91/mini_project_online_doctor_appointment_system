@@ -1,10 +1,10 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-    background-color: lightblue;
+    background-color: black;
 }
 header {
     width: 100%;
@@ -50,3 +50,131 @@ h1{
      color: lightcoral;
      font-size: 20px;
  }
+
+
+ .btn{
+    background-color: #fff;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+ } */
+
+ :root {
+    --primary-color: lightcoral;
+    --secondary-color: lightblue;
+    --dark-bg: black;
+    --light-bg: #111;
+    --text-color: #f5f5f5;
+    --text-muted: #aaa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: var(--text-color);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 2rem;
+}
+
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.btn {
+    background-color: #fff;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+h1 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+.allDetailLogin form {
+    width: 100%;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding: 30px;
+    background-color: var(--light-bg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.allDetailLogin form input {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    font-size: 16px;
+    padding: 12px 15px;
+    background-color: var(--dark-bg);
+    border: 1px solid #333;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.allDetailLogin form input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(255, 107, 107, 0.2);
+}
+
+.allDetailLogin form input[type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    padding: 12px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.allDetailLogin form input[type="submit"]:hover {
+    background-color: #e05555;
+    transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .login-container {
+        padding: 1rem;
+    }
+    
+    .allDetailLogin form {
+        padding: 20px;
+    }
+}
