@@ -1,10 +1,10 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-    background-color: lightblue;
+    background-color: black;
 }
 header {
     width: 100%;
@@ -88,4 +88,190 @@ h1{
     margin-bottom: 20px;
     color: lightcoral;
     font-size: 20px;
+}
+ */
+
+
+
+ /* Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+/* Header Styling */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    height: 80px;
+    font-size: 26px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-bottom: 2px solid lightcoral;
+}
+
+/* Navigation Bar */
+.navBar ul {
+    display: flex;
+    gap: 20px;
+}
+
+.navBar ul li a {
+    display: block;
+    padding: 12px 24px;
+    color: lightcoral;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navBar ul li a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: lightcoral;
+    margin: 40px 0;
+    font-size: 32px;
+}
+
+/* Role Selection */
+.selectRole {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.selectRole button {
+    padding: 12px 25px;
+    border: 2px solid lightcoral;
+    border-radius: 12px;
+    background-color: lightcoral;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.selectRole button:hover {
+    background-color: lightblue;
+    color: black;
+    border-color: lightblue;
+}
+
+/* Form Container */
+.patientDetail form, 
+.doctorDetail form {
+    width: 50%;
+    max-width: 500px;
+    border: 2px solid lightcoral;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+    display: none; /* Initially hidden */
+}
+
+/* Form Inputs */
+.patientDetail form input, 
+.doctorDetail form input, 
+.doctorDetail form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid lightcoral;
+    border-radius: 6px;
+    font-size: 18px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.1);
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.patientDetail form input::placeholder, 
+.doctorDetail form input::placeholder {
+    /* color: rgba(255, 255, 255, 0.6); */
+    color: black;
+}
+
+/* Input Focus Effect */
+.patientDetail form input:focus, 
+.doctorDetail form input:focus, 
+.doctorDetail form select:focus {
+    border-color: lightblue;
+    box-shadow: 0px 0px 8px lightblue;
+}
+
+/* Submit Button */
+.patientDetail form input[type="submit"], 
+.doctorDetail form input[type="submit"] {
+    background-color: lightcoral;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 12px;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid lightcoral;
+}
+
+.patientDetail form input[type="submit"]:hover, 
+.doctorDetail form input[type="submit"]:hover {
+    background-color: lightblue;
+    color: black;
+    border-color: lightblue;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+        font-size: 24px;
+    }
+
+    .navBar ul {
+        gap: 10px;
+    }
+
+    .navBar ul li a {
+        font-size: 16px;
+        padding: 10px 16px;
+    }
+
+    .selectRole {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .selectRole button {
+        width: 80%;
+        text-align: center;
+    }
+
+    .patientDetail form, 
+    .doctorDetail form {
+        width: 90%;
+        padding: 20px;
+    }
 }

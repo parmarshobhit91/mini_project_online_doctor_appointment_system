@@ -1,4 +1,4 @@
-// let baseUrl=`http://localhost:8000`;
+
 let baseUrl=`https://mini-project-online-doctor-appointment.onrender.com`;
 
 let formLogin=document.querySelector(".allDetailLogin form");
