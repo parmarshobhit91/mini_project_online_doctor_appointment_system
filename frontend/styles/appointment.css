@@ -1,67 +1,130 @@
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-    background-color: lightblue;
+/* Global Styling */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background-color: white;
 }
+
+/* Header Styling */
 header {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0px 100px;
-    height: 80px;
-    font-size: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 80px;
+  height: 80px;
+  font-size: 24px;
+  background-color: #f8f8f8;
+  border-bottom: 2px solid lightcoral;
 }
+
+/* Navigation Bar */
 .navBar ul {
-    display: flex;
+  display: flex;
+  gap: 20px;
 }
 
 .navBar ul li a {
-    display: block;
-    padding: 10px 30px;
-    color: lightcoral;
+  display: block;
+  padding: 12px 20px;
+  color: lightcoral;
+  font-size: 18px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
 }
 
 .navBar ul li a:hover {
-    background-color: white;
-    color: lightblue;
-    border-radius: 50px;
+  background-color: lightcoral;
+  color: white;
+  border-radius: 20px;
 }
-h1,h3{
-    text-align: center;
-    color: lightcoral;
-    margin-bottom: 20px;
-}
-table{
-    border-collapse: collapse;
-    width: 80%;
-    margin: auto;
-  }
-  td, th {
-      border: 1px solid lightcoral;
-      text-align: center;
-      padding: 8px;
-      height: 30px;
-    }
-  tr:nth-child(even) {
-     background-color: #333;
-  }  
- 
 
-  .cancelAppointment,.videoCall{
-    border-radius: 10px;
-    background-color: lightcoral;
-    padding: 10px 20px;
-    color: lightblue;
-    font-size: 15px;
-    border: 1px solid lightcoral;
+/* Page Heading */
+h1, h3 {
+  text-align: center;
+  color: lightcoral;
+  margin: 40px 0 20px 0;
+  font-size: 28px;
+}
+
+/* Table Styling */
+table {
+  width: 90%;
+  max-width: 1000px;
+  border-collapse: collapse;
+  margin: 30px auto;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Table Header */
+th {
+  background-color: lightcoral;
+  color: white;
+  font-size: 18px;
+  padding: 12px;
+}
+
+/* Table Cells */
+td, th {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 12px;
+  font-size: 16px;
+}
+
+/* Alternate Row Coloring */
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Buttons Styling */
+.cancelAppointment, .videoCall {
+  border-radius: 8px;
+  background-color: lightcoral;
+  padding: 10px 16px;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.cancelAppointment:hover, .videoCall:hover {
+  background-color: white;
+  color: lightcoral;
+  border: 1px solid lightcoral;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+      padding: 15px;
+      font-size: 22px;
   }
-  .cancelAppointment:hover,.videoCall:hover{
-    background-color: lightblue;
-    color: lightcoral;
-    border: 1px solid lightcoral;
-    cursor: pointer;
+
+  .navBar ul {
+      gap: 10px;
   }
+
+  .navBar ul li a {
+      font-size: 16px;
+      padding: 10px 16px;
+  }
+
+  table {
+      width: 100%;
+      font-size: 14px;
+  }
+
+  .cancelAppointment, .videoCall {
+      font-size: 14px;
+      padding: 8px 12px;
+  }
+}
