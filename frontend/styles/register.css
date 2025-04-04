@@ -121,6 +121,7 @@ header {
 .navBar ul {
     display: flex;
     gap: 20px;
+
 }
 
 .navBar ul li a {

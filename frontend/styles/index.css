@@ -20,7 +20,7 @@
     position:absolute;
     height: 110vh;
     object-fit: cover;
-    z-index: -1;
+    z-index: -2;
 }
 
 .main-title{
@@ -108,7 +108,7 @@ nav ul li a:hover{
 }
 
 .content #bg-div1{
-    background-image: url(../Images/boy.jpg);
+    background-image: url(../Images/pat.jpg);
     background-size: cover; /* Scales image to cover the div */
     background-position: center; /* Centers the image */
    
